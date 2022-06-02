@@ -1,0 +1,31 @@
+.navbars{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+.logo-img{
+  margin-left: 2%;
+}
+.links{
+  /* width: 900px; */
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  /* padding: 10%; */
+}
+.links_title{
+  width: 100px;
+  list-style: none;
+}
+.Icon-img{
+  margin: auto;
+  margin-right: 2%;
+}
+.main{
+  width: 100%;
+}
+.main img{
+  width: 100%;
+}
