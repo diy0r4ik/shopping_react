@@ -10,6 +10,9 @@ import img6 from '../img/men.png'
 import img7 from '../img/women.png'
 import img8 from '../img/oral_shop.png'
 import img9 from '../img/guy.png'
+import img10 from '../img/instagram.png'
+import img11 from '../img/twiter.png'
+import img12 from '../img/facebook.png'
 export default class Dashboard extends Component{
     render(){
         return(
@@ -123,11 +126,11 @@ export default class Dashboard extends Component{
               <div className='footer'>
                 <ul className='footer_left'>
                   <li a href=''>Customer Service</li>
-                  <li a href=''>Customer Service</li>
-                  <li a href=''>Customer Service</li>
-                  <li a href=''>Customer Service</li>
-                  <li a href=''>Customer Service</li>
-                  <li a href=''>Customer Service</li>
+                  <li a href=''>Customer</li>
+                  <li a href=''>Customer</li>
+                  <li a href=''>Customer</li>
+                  <li a href=''>Customer</li>
+                  <li a href=''>Customer</li>
                 </ul>
                 <ul className='footer_right'>
                   <li a href=''>About</li>
@@ -137,8 +140,17 @@ export default class Dashboard extends Component{
                   <li a href=''>About</li>
                   <li a href=''>About</li>
                 </ul>
-                <div className='footer_info'>
+                <div className='footer_logo'>
                 <img src={img} alt=" " className='logo-img'/>
+                </div>
+                <div className='footer_info'>
+                    <p className='footer_link'>© Ugmonk 2021</p>
+                    <p className='footer_p'>All images and content may not be used without permission</p>
+                </div>
+                <div className='footer_net'>
+                    <img src={img10} alt=" " className='logo-img'/>
+                    <img src={img11} alt=" " className='logo-img'/>
+                    <img src={img12} alt=" " className='logo-img'/>
                 </div>
               </div>
             </div>

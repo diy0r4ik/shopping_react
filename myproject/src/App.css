@@ -9,11 +9,9 @@
   margin-left: 2%;
 }
 .links{
-  /* width: 900px; */
   display: flex;
   text-align: center;
   justify-content: space-between;
-  /* padding: 10%; */
 }
 .links_title{
   width: 100px;
@@ -32,20 +30,11 @@
   z-index: 10;
 }
 .main_h5{
-  /* position: absolute;
-  margin-left: 10%;
-  bottom: 54px;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  z-index: 15; */
   font-size: 15px;
   color: rgb(0, 0, 0);
   z-index: 213123;
 }
 .main .main_link{
-  /* position: absolute; */
-  /* margin-left: 140px; */
-  /* top: 807px; */
   font-size: 15px;
   color: rgb(255, 0, 0);
   z-index: 213123;
@@ -71,46 +60,47 @@
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 3%;
-  /* padding: 5%; */
 }
 .card{
-  /* width: 23%; */
   height: 40%;
-  /* padding: 2%; */
   margin: 5px auto;
   display: flex;
 }
 .card_text{
-  /* width: 50%; */
   font-size: 15px;
 }
 .card_text2{
-  /* width: 25%; */
   font-size: 15px;
 }
 .card_btn{
-  border: none;
+  /* border: none;
   width: 302px;
   font-size: 20px;
   color: #fff;
   background-color: #000;
   padding: 1%;
-  /* margin-top: 5%;
-  margin-left: 43%;
-  margin-bottom: 10%; */
-  margin: 5% auto 5% 40%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-} 
+  margin: 5% auto 5% 40%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6.5rem 0;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
 .main3{
   position: relative;
-  /* z-index: 10; */
 }
 .main3-img{
   width: 100%;
-  /* z-index: 1; */
-  /* height: 100vh; */
 }
 .circle{
   position: absolute;
@@ -118,7 +108,6 @@
   height: 100px;
   border-radius: 50px;
   background-color: #7E6E45;
-  /* margin-top: 5px; */
   right: 30px;
   top: 40px;
   z-index: 99;
@@ -164,16 +153,12 @@ color: #fff;
 }
 .main4{
   width: 100%;
-  /* height: 690px; */
   padding: 8%;
   background-color: #312F2E;
 }
 .main4_box{
   width: 100%;
   height: 40%;
-  /* width: 70%;
-  height: 50%; */
-  /* padding: 50%; */
   border: 1px solid red;
   background-color: #fff;
   z-index: 5;
@@ -187,7 +172,6 @@ color: #fff;
 }
 .main4_box img{
   width: 60%;
-  /* height: 100vh; */
   margin-left: 40%;
   right: 0;
   z-index: 10;
@@ -217,7 +201,6 @@ color: #fff;
 }
 .main5_title{
   width: 40%;
-  /* margin-top: 55px; */
   font-size: 30px;
   margin: 5% auto;
 }
@@ -288,7 +271,6 @@ color: #fff;
 .main7 h1{
   font-size: 34px;
   padding-top: 8%;
-  /* margin-left: 20%; */
   text-align: center;
 }
 .main7 p{
@@ -316,6 +298,33 @@ color: #fff;
   list-style: none;
   text-decoration: none;
 }
+.footer_logo{
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-right: -52%;
+  margin-top: 30px;
+}
 .footer_info{
-  margin-right: -130%;
+  width: 40%;
+  text-align: right;
+  margin-right: -100%;
+}
+.footer_net{
+  margin: -8% auto 11px 185%;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width: 960px){
+  .card_btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* margin: 5% auto; */
+  }
 }
