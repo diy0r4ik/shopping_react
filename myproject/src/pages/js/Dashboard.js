@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import{ Nav, Navbar,NavDropdown }from "react-bootstrap"
+import{ Nav, Navbar,NavDropdown, Module}from "react-bootstrap"
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { BsHeartFill, BsHeart } from "react-icons/bs";
 import img from '../img/Vector.png'
 import img1 from '../img/Icon.png'
 import img2 from '../img/Rectangle.png'
@@ -13,10 +15,42 @@ import img9 from '../img/guy.png'
 import img10 from '../img/instagram.png'
 import img11 from '../img/twiter.png'
 import img12 from '../img/facebook.png'
-export default class Dashboard extends Component{
-    render(){
+
+import {BiCart} from "react-icons/bi"
+import {BsInstagram} from "react-icons/bs"
+import {AiOutlineTwitter} from "react-icons/ai"
+import {AiFillFacebook} from "react-icons/ai"
+import 'antd/dist/antd.css';
+import { useState } from 'react';
+import { Rate } from 'antd';
+
+import { Modal } from 'antd';
+import { Pagination } from 'antd';
+const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
+export default function Dashboard() {
+  const [value, setValue] = useState(3);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+
         return(
             <div>
+              <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+              </Modal>
               <div className='navbars'>
                 <h1 className='logo'>Ugmonk</h1>
                 <img src={img} alt=""className='logo-img'/>
@@ -26,7 +60,8 @@ export default class Dashboard extends Component{
                   <li className='links_title'>Objects</li>
                   <li className='links_title'>Analog</li>
                 </div>
-                <img src={img1} alt=""className='Icon-img'/>
+              <BiCart className='biCart' type="primary" onClick={showModal} />
+                {/* <img src={img1} alt=""className='Icon-img'/> */}
               </div>
               <div className='main'>
               <img src={img2} alt=""className='main-img'/>
@@ -71,6 +106,7 @@ export default class Dashboard extends Component{
                     <h6 className='card_text3'>$103.00</h6>
                     <h6 className='card_text4'>$89.00</h6>
                   </div>
+                  {/* <BiCart className='biCart' type="primary" onClick={showModal} /> */}
                 </div>
                 <button className='card_btn'>Shop New Arrivals →</button>
               </main>
@@ -92,6 +128,9 @@ export default class Dashboard extends Component{
                     <a className='left_a' href=''>Shop the collection →</a>
                   </div>
                 </div>
+              </div>
+              <div className="pagination">
+                <Pagination defaultCurrent={1} total={40}  />
               </div>
               <div className='main5'>
                 <h1 className='main5_title'>Our mission is to create simple, beautiful objects that combine form and function.</h1>
@@ -148,12 +187,11 @@ export default class Dashboard extends Component{
                     <p className='footer_p'>All images and content may not be used without permission</p>
                 </div>
                 <div className='footer_net'>
-                    <img src={img10} alt=" " className='logo-img'/>
-                    <img src={img11} alt=" " className='logo-img'/>
-                    <img src={img12} alt=" " className='logo-img'/>
+                  <BsInstagram className='bsIns'/>
+                  <AiOutlineTwitter className='aiOut'/>
+                  <AiFillFacebook className='aiFill'/>
                 </div>
               </div>
             </div>
         )
     }
-}
