@@ -133,7 +133,7 @@ export default function Dashboard() {
                 <Pagination defaultCurrent={1} total={40}  />
               </div>
               <div className='main5'>
-                <h1 className='main5_title'>Our mission is to create simple, beautiful objects that combine form and function.</h1>
+                <h1 className='main5_title'>Our mission is to create simple, beautiful <br></br> objects that combine form and function.</h1>
                 <div className='main5_cards'>
                   <div className='men_card'>
                     <img src={img6} alt=" " className='men-img'/>
@@ -154,42 +154,46 @@ export default function Dashboard() {
               </div>
               <div className='main6'>
                 <img src={img9} alt=" " className='guy-img'/>
-                <h1 className='main6_title'>A design studio in Downingtown, PA, creating and curating products that combine form & function</h1>
+                <h1 className='main6_title'>A design studio in Downingtown, PA, creating and <br></br> curating products that combine form & function</h1>
                 <a href=''>Read Our Story →</a>
               </div>
               <div className='main7'>
                 <h1 className='main7_title'>Stay in the loop</h1>
-                <p className='main6_p'>Be the first to know when new products drop and get behind-the-scenes content straight from Ugmonk’s founder.</p>
+                <p className='main6_p'>Be the first to know when new products drop and <br></br> get behind-the-scenes content straight from <br></br> Ugmonk’s founder.</p>
                 <div className='main7_box'></div>
               </div>
               <div className='footer'>
-                <ul className='footer_left'>
-                  <li a href=''>Customer Service</li>
-                  <li a href=''>Customer</li>
-                  <li a href=''>Customer</li>
-                  <li a href=''>Customer</li>
-                  <li a href=''>Customer</li>
-                  <li a href=''>Customer</li>
-                </ul>
-                <ul className='footer_right'>
-                  <li a href=''>About</li>
-                  <li a href=''>About</li>
-                  <li a href=''>About</li>
-                  <li a href=''>About</li>
-                  <li a href=''>About</li>
-                  <li a href=''>About</li>
-                </ul>
-                <div className='footer_logo'>
-                <img src={img} alt=" " className='logo-img'/>
+                <div className='footer_left_text'>
+                  <ul className='footer_left'>
+                    <li a href=''>Customer Service</li>
+                    <li a href=''>Customer</li>
+                    <li a href=''>Customer</li>
+                    <li a href=''>Customer</li>
+                    <li a href=''>Customer</li>
+                    <li a href=''>Customer</li>
+                  </ul>
+                  <ul className='footer_right'>
+                    <li a href=''>About</li>
+                    <li a href=''>About</li>
+                    <li a href=''>About</li>
+                    <li a href=''>About</li>
+                    <li a href=''>About</li>
+                    <li a href=''>About</li>
+                  </ul>
                 </div>
-                <div className='footer_info'>
+                <div className='footer_right_text'>
+                  <div className='footer_logo'>
+                    <img src={img} alt=" " className='logo-img'/>
+                  </div>
+                  <div className='footer_info'>
                     <p className='footer_link'>© Ugmonk 2021</p>
                     <p className='footer_p'>All images and content may not be used without permission</p>
-                </div>
-                <div className='footer_net'>
-                  <BsInstagram className='bsIns'/>
-                  <AiOutlineTwitter className='aiOut'/>
-                  <AiFillFacebook className='aiFill'/>
+                  </div>
+                  <div className='footer_net'>
+                    <BsInstagram className='bsIns'/>
+                    <AiOutlineTwitter className='aiOut'/>
+                    <AiFillFacebook className='aiFill'/>
+                  </div>
                 </div>
               </div>
             </div>
