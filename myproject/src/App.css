@@ -479,3 +479,11 @@ color: #fff;
     width: 98%;
   }
 }
+
+
+.Malika_mumacha{
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 5%;
+}
